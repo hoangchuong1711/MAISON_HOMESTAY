@@ -50,16 +50,16 @@ export default function Hero() {
   }, [api]);
 
   return (
-    <section id="home" className="relative w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden">
       <Carousel
         opts={{ loop: true }}
         setApi={setApi}
-        className="relative min-h-[80vh]"
+        className="relative h-screen min-h-screen"
       >
         <CarouselContent className="ml-0">
           {heroSlides.map((slide) => (
             <CarouselItem key={slide.title} className="pl-0">
-              <div className="relative flex min-h-[80vh] items-center">
+              <div className="relative flex h-screen items-center">
                 <img
                   src={slide.image}
                   alt={slide.title}

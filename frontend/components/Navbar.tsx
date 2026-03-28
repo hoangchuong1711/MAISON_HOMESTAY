@@ -22,7 +22,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur">
+    <header className="fixed top-0 z-50 w-full border-b border-black/5 bg-white/70 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <a
           href="#home"
