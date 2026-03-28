@@ -1,5 +1,6 @@
 import Reveal from "@/components/Reveal";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -29,11 +30,13 @@ export default function About() {
           </Reveal>
           <Reveal className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
-              <img
-                src="images/about.jpg"
+              <Image
+                src="https://drive.google.com/uc?export=view&id=1nCcE2p-7ei5GQZtlf2Hy8JTqoWFrqRCr"
                 alt="Countryside homestay surroundings"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                width={600}
+                height={400}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent" />
             </div>
